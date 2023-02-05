@@ -2,4 +2,113 @@
 @import 'fonts' ;
 @import 'reset' ;
 @import 'global' ;
+
+
+
+.header {
+  padding: 60px 0;
+  background-color: $bg;
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    margin-right: 60px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 43px;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: normal;
+    text-decoration: underline transparent;
+    transition: color 0.5s, border-radius 0.5s, text-shadow 0.5s;  
+    &:hover {
+      color: $accent;
+    }
+    &:focus {
+      box-shadow: 0px 0px 0px 2px rgba($accent, 0.7);
+      border-radius: 5px;
+    }
+    &:active {
+      text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+    }
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  &__link--active {
+    color: $accent;
+  }
+
+  .usernav {
+    display: flex;
+    justify-content: space-between;
+    &__icon {
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: rgba($accent, 0);
+      width: 44px;
+      height: 44px;
+    }
+    &__icon:not(:last-child) {
+      margin-right: 15px;
+    }
+    &__icon {
+      position: relative;
+      transition: background-color 0.5s, stroke 0.5s, box-shadow 0.5s;
+      &:hover {
+        background-color: rgba($accent, 1);
+      }
+      &:hover svg path {
+        stroke: #fff;
+      }
+      &:hover svg ellipse {
+        stroke: #fff;
+      }
+      &:active {
+        background-color: rgba($accent, 0.1);
+      }
+      &:focus {
+        background-color: rgba($accent, 0.1);
+        box-shadow: 0px 0px 0px 2px rgba($accent, 0.7);
+        border-radius: 5px;
+      }
+    }
+    &__num {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $accent;
+      top: 5px;
+      right: 5px;
+      font-size: 10px;
+      line-height: 14px;
+      text-align: center;
+      color: #fff;
+      transition: background-color 0.5s, color 0.5s;
+      &:hover {
+        background-color: white;
+        color: $accent;
+      }
+    }
+  }
+}
+
+
+
+
+
 @import 'media' ;

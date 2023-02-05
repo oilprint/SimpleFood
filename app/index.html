@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,72 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  fdjfjdshfjdsds
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptate, debitis excepturi blanditiis consectetur voluptatem consequatur doloremque, nam minus corporis in quibusdam commodi totam deserunt dolorem, natus ea esse provident.
+
+  <header class="header">
+    <div class="container">
+      <nav class="header__menu">
+
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="Логотип">
+        </a>
+
+        <div class="header__links">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link header__link--active" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">
+                Блюда
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+
+          <div class="usernav">
+            <button class="usernav__icon" aria-label="Поиск" type="submit">
+              <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="9.76663" cy="10.6301" rx="8.98856" ry="8.88424" stroke="363853" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16.0184 17.2708L19.5424 20.7448" stroke="#363853" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </button>
+
+            <button class="usernav__icon" aria-label="Корзина" type="button">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1 1.17578L3.08 1.5316L4.04301 12.8715C4.12001 13.7976 4.90301 14.5082 5.84301 14.5053H16.752C17.649 14.5072 18.41 13.8549 18.537 12.9772L19.486 6.49532C19.592 5.77083 19.083 5.09872 18.351 4.99395C18.287 4.98505 3.414 4.98011 3.414 4.98011"
+                stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12.375 8.63337H15.1479" stroke="#363853" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.4043 17.9316C5.70527 17.9316 5.94824 18.1729 5.94824 18.4696C5.94824 18.7673 5.70527 19.0085 5.4043 19.0085C5.10333 19.0085 4.86035 18.7673 4.86035 18.4696C4.86035 18.1729 5.10333 17.9316 5.4043 17.9316Z"
+                stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.6846 17.9316C16.9856 17.9316 17.2296 18.1729 17.2296 18.4696C17.2296 18.7673 16.9856 19.0085 16.6846 19.0085C16.3836 19.0085 16.1406 18.7673 16.1406 18.4696C16.1406 18.1729 16.3836 17.9316 16.6846 17.9316Z"
+                stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span class="usernav__num">
+                4
+              </span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
