@@ -1,9 +1,30 @@
 $accent: #FF6838;
 $primary: #31352b;
 $secondary: #363853; 
+$bg-icon: #ECECEC;
 $bg: #F9FAFF;
-$txt: #31352b;
+$light: #fff;
+$shadow: #363853;
+$grey-light: #ECECEC;
+$grey: #C2C2C2;
 
+
+
+%rubik-400 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+%rubik-italic {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
 
 
 %btn {

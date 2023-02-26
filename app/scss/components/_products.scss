@@ -1,0 +1,25 @@
+.products {
+  text-align: center;
+
+  &__categories {
+    display: flex;
+    margin-bottom: 45px;
+  }
+
+  &__category:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__grid {
+    margin-bottom: 60px;
+  }
+
+  &__link-button {
+    margin: 0 auto;
+  }
+}
+
+.mixitup-control-active {
+  background-color: $accent;
+  color: $light;
+}

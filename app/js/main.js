@@ -1,4 +1,4 @@
 $(function () {
-  var mixitup = mixitup('.products__items');
+  var mixer = mixitup('.products__grid');
   
 });
