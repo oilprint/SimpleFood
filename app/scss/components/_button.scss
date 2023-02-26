@@ -1,0 +1,43 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.3;
+  background-color: $accent;
+  color: $light;
+  transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+
+  &--big {
+    font-size: 18px;
+    padding: 12px 32px;
+  }
+
+  &--icon {
+    padding: 13px 38px;
+    .button__icon {
+      margin-right: 15px;
+    }
+  }
+
+  &:hover {
+    background-color: rgba($light, 0.1);
+    color: $accent;
+    box-shadow: 0px 5px 12px rgba($accent, 0.2),
+      0px 0px 0px 2px rgba($accent, 0.7);
+  }
+
+  &:active {
+    background-color: rgba($accent, 0.7);
+    color: $accent;
+    text-shadow: none;
+  }
+
+  &:focus {
+    color: $accent;
+    box-shadow: 0px 0px 0px 2px rgba($accent, 0.7);
+    background-color: rgba($accent, 0.1);
+  }
+}
