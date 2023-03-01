@@ -1,0 +1,44 @@
+.app {
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    width: 100%;
+    margin-right: 60px;
+  }
+
+  &_title {
+    text-align: left;
+    margin-bottom: 45px;
+  }
+
+  &__txt {
+    margin-bottom: 30px;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 570px;
+    width: 100%;
+    height: 380px;
+  }
+  
+}
