@@ -22,4 +22,7 @@
 .mixitup-control-active {
   background-color: $accent;
   color: $light;
+  .button-light__icon {
+    fill: $light;
+  }
 }

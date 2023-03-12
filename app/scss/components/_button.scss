@@ -1,7 +1,4 @@
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 7px 16px;
   border-radius: 5px;
   font-size: 14px;
@@ -10,24 +7,48 @@
   color: $light;
   transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
 
+   &__icon {
+     margin-right: 15px;
+     fill: $light;
+     transition: fill 0.5s;
+   }
+
   &--big {
     font-size: 18px;
     padding: 12px 32px;
   }
 
   &--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 13px 38px;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
 
-    .button__icon {
-      margin-right: 15px;
+
+    &:hover {
+      .button__icon {
+        fill: $accent;
+      }
+    }
+
+    &:active {
+      .button__icon {
+        fill: $accent;
+      }
+    }
+
+    &:focus {
+      .button__icon {
+        fill: $accent;
+      }
     }
   }
 
   &:hover {
-    background-color: rgba($light, 0.1);
+    background-color: $light;
     color: $accent;
-    box-shadow: 0px 5px 12px rgba($accent, 0.2),
-      0px 0px 0px 2px rgba($accent, 0.7);
+    box-shadow: 0px 5px 12px rgba($accent, 0.2), 0px 0px 0px 2px rgba($accent, 0.7);
   }
 
   &:active {

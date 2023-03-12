@@ -48,6 +48,12 @@
   justify-content: space-between;
   align-items: center;
 
+  &__icon {
+    stroke: $secondary;
+    fill: none;
+    transition: stroke 0.5s;
+  }
+
   &__btn {
     display: flex;
     justify-content: center;
@@ -69,6 +75,10 @@
       .usernav__num {
         background-color: white;
         color: $accent;
+      }
+
+      .usernav__icon {
+        stroke: $light;
       }
     }
 
