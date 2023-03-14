@@ -1,0 +1,101 @@
+.review {
+
+  &__item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+  }
+
+  &__img {
+    margin-right: 80px;
+    border-radius: 50%;
+
+  }
+
+  &__txt {
+    position: relative;
+    @extend %rubik-italic;
+    font-size: 20px;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+      background-image: url('images/decor/quotes-left.svg');
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+
+
+
+
+  &__name {
+    @extend %rubik-500;
+    font-size: 20px;
+    line-height: 1.3;
+    color: $accent;
+    margin-bottom: 15px;
+  }
+
+  &__name-status {
+    font-size: 14px;
+  }
+
+
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    list-style: none;
+    line-height: 0;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    button {
+      padding: 0;
+      font-size: 0;
+      background-color: $grey;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      padding: 0;
+    }
+
+    &.slick-active {
+      border-radius: 50%;
+      background-color: $accent;
+    }
+
+    &:hover {
+      border-radius: 50%;
+      box-shadow: 0px 0px 0px 2px rgba($accent, 0.7);
+      background-color: rgba($accent, 0.1);
+    }
+
+    &:active {
+      border-radius: 50%;
+      background-color: rgba($accent, 0.6);
+    }
+
+    &:focus {
+      border-radius: 50%;
+      box-shadow: 0px 0px 0px 2px $accent;
+    }
+
+  }
+
+}
+
+.slick-prev,
+.slick-next {
+  
+}

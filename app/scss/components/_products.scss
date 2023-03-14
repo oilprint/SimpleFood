@@ -1,6 +1,10 @@
 .products {
   text-align: center;
 
+  &__title {
+    margin-bottom: 60px;
+  }
+
   &__categories {
     display: flex;
     margin-bottom: 45px;
